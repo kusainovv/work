@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Бронирование</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <a href="index.html" class="logo">
+                <img class="logo-image" alt="logo" src="./media/images/for-logo/logotype.svg">
+                <div class="logo-description">
+                    <p class="logo-description__title">Праздник в каждый дом!</p>
+                    <span class="logo-description__subtitle">Праздничное агенство</span>
+                </div>
+            </a>
+    
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list-item"><a class="navigation-list-item__link" href="#promotions">Акции</a>
+                    </li>
+                    <li class="navigation-list-item"><a class="navigation-list-item__link" href="./search.html">Поиск</a>
+                    </li>
+                    <li class="navigation-list-item"><a class="navigation-list-item__link" href="#">Управление
+                            бронированием</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="reservation-form">
+                <form id="reservationForm" class="reservation-form__feedback">
+
+                    <div class="order-details">
+                        <div class="order-detail">
+                            <label for="region">Регион:</label>
+                            <input type="text" id="region" placeholder="Северный" class="reservation-form__field" name="region" required>
+                        </div>
+    
+                        <div class="order-detail">
+                            <label for="locationAddress">Адрес локации:</label>
+                            <input type="text" id="locationAddress" placeholder="ул. Иванова, д. 34" class="reservation-form__field" name="locationAddress" required>
+                        </div>
+    
+                        <div class="order-detail">
+                            <label for="eventDate">Дата мероприятия:</label>
+                            <input type="date" id="eventDate" class="reservation-form__field" name="eventDate" required>
+                        </div>
+    
+                        <div class="order-detail">
+                            <label for="peopleCount">Количество человек:</label>
+                            <input type="number" placeholder="25" id="peopleCount" class="reservation-form__field" name="peopleCount" required>
+                        </div>
+    
+                        <div class="order-detail">
+                            <label for="totalCost">Стоимость:</label>
+                            <input type="text" placeholder="5000" id="totalCost" class="reservation-form__field" name="totalCost" readonly>
+                        </div>
+    
+                    </div>
+    
+                    <div class="additional-services">
+                        <h3>Дополнительные услуги</h3>
+                        <label>
+                            <input type="checkbox" name="catering"> Организация питания (500  р/чел)
+                        </label>
+    
+                        <label>
+                            <input type="checkbox" name="animators"> Услуги аниматоров (5000 р/сутки)
+                        </label>
+    
+                        <label>
+                            <input type="checkbox" name="host"> Услуги ведущего (500  р/час )
+                        </label>
+    
+                        <label>
+                            <input type="checkbox" name="kidsTaxi"> Услуги детского такси (50  р + 10 р за каждый км  )
+                        </label>
+                    </div>
+    
+                    <div class="additional-services__service">
+                        <label for="comments" class="additional-services__note">Дополнительный комментарий:</label>
+                        <textarea id="comments" class="reservation-form__field" placeholder="Ваш комментарий" name="comments"></textarea>
+                    </div>
+    
+                    <div class="additional-services__service">
+                        <label for="customerEmail" class="additional-services__note">Email:</label>
+                        <input type="email" placeholder="test@gmail.com" class="reservation-form__field" id="customerEmail" name="customerEmail" required>
+                    </div>
+    
+                    <div class="additional-services__service">
+                        <label for="count" class="additional-services__note">Итоговая стоимость:</label>
+                        <input type="number" placeholder="25" id="count" class="reservation-form__field" name="count" required>
+                    </div>
+    
+                    <button type="submit" class="reservation-form__button">Оформить бронирование</button>
+                </form>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footer-navigation">
+                <a href="http://xxxxxx">home</a>
+                <a href="http://xxxxxx/login">login</a> 
+                <a href="http://xxxxxx/signup">sign up</a>
+                <a href="http://xxxxxx/contact">contact</a>
+                <a href="http://xxxxxx/news">news</a>
+                <a href="http://xxxxxx/return">return</a>
+                <a href="http://xxxxxx/feedback">feedback</a>
+                <a href="tel:+78001112020">Телефон: 8 (800) 111-20-20</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
