@@ -1,5 +1,5 @@
-@import url(./font.css);
-@import url(./animation.css);
+@import url(../css/font.css);
+@import url(../css/animation.css);
 
 html {
   scroll-behavior: smooth;
@@ -14,7 +14,6 @@ body {
   background-color: #ede8e8;
   margin: 0 10px;
   background-size: 400% 400%;
-  animation: gradientAnimation 20s infinite;
 }
 
 header {
@@ -132,7 +131,7 @@ button {
 }
 
 .digest {
-  background-image: url("/media/images/измененные/4_edited.jpg");
+  background-image: url(../media/images/измененные/4_edited.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -515,6 +514,8 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   background: linear-gradient(45deg, #925136f2, #3a00ffb3, #18181aa3);
+  background-size: 200% 200%;
+  animation: gradientAnimation 4s infinite;
 }
 .company-info__goal {
   display: flex;
@@ -1022,6 +1023,8 @@ button {
   background: linear-gradient(45deg, #925136f2, #3a00ffb3, #18181aa3);
   color: white;
   font-weight: 300;
+  animation: gradientAnimation 4s infinite;
+  background-size: 200% 200%;
 }
 .seat__list-title {
   margin: 0;
